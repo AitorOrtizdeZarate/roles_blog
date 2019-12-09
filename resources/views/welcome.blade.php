@@ -37,7 +37,10 @@
       </div>
     </div>
   </nav>
+  @extends ('layouts.app')
+  @section ('content')
 
+  $posts y $categorias
   <!-- Page Content -->
   <div class="container">
     <div class="row">
