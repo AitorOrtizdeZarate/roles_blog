@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use App\Post;
 
 class PostController extends Controller
 {
@@ -13,7 +15,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return "Listado de mis posts";
+        $user = Auth::user();
+        $posts= Post::where('user_id', $user->id)->get();
     }
 
     /**
