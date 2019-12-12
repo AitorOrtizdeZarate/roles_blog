@@ -18,3 +18,5 @@ Route::resource('posts', 'PostController');
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
