@@ -42,4 +42,8 @@ class User extends Authenticatable
         $this->notify (new VerifyEmail);
     }
 
+    public function isAdmin(){
+        return ($this->role=="admin");
+    }
+
 }
