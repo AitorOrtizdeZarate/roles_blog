@@ -19,7 +19,11 @@ Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/admin', 'AdminController@index')->name('admin')->middleware('admin');
+Route::get('/admin', 'AdminController@index')->name('admin');
+
+Route::get('/editor', 'EditorController@index')->name('editor');
+
+
 
 
 
