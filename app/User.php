@@ -38,13 +38,18 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function posts()    
+    {
+        return $this->hasMany(Post::class);
+    }
+
     public function sendEmailVerificationNotification(){
         $this->notify (new VerifyEmail);
     }
 
-    public function isAdmin(){
+    /*public function isAdmin(){
         return ($this->role=="admin");
-    }
+    }*/
 
      public function getRole(){
         return ($this->role);
