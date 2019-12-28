@@ -29,12 +29,6 @@
             
             <!-- Post Content -->
             <p class="lead">{{$post->excerpt}}</p>
-            <blockquote class="blockquote">
-              <p class="mb-0">blockquote ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer class="blockquote-footer">Someone famous in
-                <cite title="Source Title">Source Title</cite>
-              </footer>
-            </blockquote>
             <p>{{$post->body}}</p>
             <hr>
           @endforeach

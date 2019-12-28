@@ -13,6 +13,9 @@
 
   <!-- Custom styles for this template -->
   <link href="{{url('css/blog-post.css')}}" rel="stylesheet">
+
+   <!-- Fontsawesome -->
+    <link href="{{ URL::asset('/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
 </head>
 <body>
     @include('layouts.homepartials.navbar')
