@@ -10,6 +10,6 @@ class AdminController extends Controller
 		$this->middleware('role:admin');
 	}
     public function index(){
-    	return "Soy administrador";
+    	return view('admin');
     }
 }
