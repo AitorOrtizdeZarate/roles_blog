@@ -23,6 +23,8 @@ Route::get('/admin', 'AdminController@index')->name('admin');
 
 Route::get('/editor', 'EditorController@index')->name('editor');
 
+Route::put('/role/{id}', 'AdminController@cambioRol')->name('cambioRol');
+
 
 
 

@@ -45,7 +45,6 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $time = Carbon::now()->setTimezone('Europe/Madrid');
-
         $Post = new Post;
         $Post->title = $request -> input('title');
         $Post->excerpt = $request -> input('excerpt');
@@ -95,7 +94,6 @@ class PostController extends Controller
     public function update(Request $request, $id)
     {
         $time = Carbon::now()->setTimezone('Europe/Madrid');
-
         $Post = Post::find($id);
         $Post->title = $request -> input('title');
         $Post->excerpt = $request -> input('excerpt');
